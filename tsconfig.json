@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "outDir": "./dist", // 输出目录 tsc
+    "sourceMap": true, // 是否要生成sourceMap文件
+    "noImplicitAny": true, // 是否不允许出现隐含的any类型
+    "module": "es6", // 模块规范
+    "target": "ESNext", // 编译的目标是es5
+    "jsx": "react", // 如何编译JSX语法 
+    "esModuleInterop":true, // 允许common.js模块和es module进行转换
+    "baseUrl": ".", // 查找非相对路径的URL的其实路径
+    "paths" : {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "./src/**/*" // 只编译src目录下的ts文件
+  ]
+}

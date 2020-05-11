@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商城</title>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- <script src="./vendor/react.dll.js"></script> -->
+    <script>
+        (function() {
+            let docEle = document.documentElement;
+            function setRemUnit() {
+                //把根元素fontSize的值设置为了屏幕宽度的十分之一像素
+                docEle.style.fontSize = docEle.clientWidth / 10 + 'px';
+            }
+            setRemUnit();
+            window.addEventListener('resize', setRemUnit);
+        })()
+    </script>
+</body>
+</html>
